@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapeless.Core", "Shapeless.Core\Shapeless.Core.csproj", "{22D2AFC2-F839-49F2-A61C-57DD86681829}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapeless.MVC3", "Shapeless.MVC3\Shapeless.MVC3.csproj", "{4F73735F-A1E4-4441-B9AA-20E5B865F85E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{22D2AFC2-F839-49F2-A61C-57DD86681829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22D2AFC2-F839-49F2-A61C-57DD86681829}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22D2AFC2-F839-49F2-A61C-57DD86681829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F73735F-A1E4-4441-B9AA-20E5B865F85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F73735F-A1E4-4441-B9AA-20E5B865F85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F73735F-A1E4-4441-B9AA-20E5B865F85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F73735F-A1E4-4441-B9AA-20E5B865F85E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
