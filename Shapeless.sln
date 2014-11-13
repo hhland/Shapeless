@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapeless.Core", "Shapeless
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapeless.MVC3", "Shapeless.MVC3\Shapeless.MVC3.csproj", "{4F73735F-A1E4-4441-B9AA-20E5B865F85E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{98D2537C-FA9A-47F7-AB69-97C9B76F74ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

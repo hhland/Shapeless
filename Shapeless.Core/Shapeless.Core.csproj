@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Clazz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlz.cs" />
     <Compile Include="Stringz.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
