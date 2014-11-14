@@ -11,24 +11,17 @@ using Shapeless.MVC3.Models;
 
 namespace Shapeless.MVC3.Controllers
 {
-    public abstract class SqlDSController :Controller
+    public abstract class SqlDSController :DSController
     {
 
         protected abstract string viewName { get;}
 
         protected abstract SqlConnection connection { get; }
 
-        protected abstract string title { get; }
+       
 
 
-        protected virtual int limit {
-            get { return Int32.MaxValue; }
-        }
-
-        protected virtual int start
-        {
-            get { return 0; }
-        }
+       
 
 
         
@@ -216,7 +209,7 @@ namespace Shapeless.MVC3.Controllers
         
         
 
-        protected  int _total()
+        protected override int _total()
         {
             string sqlCount = createConditionSql();
             int re = 0;
@@ -227,37 +220,21 @@ namespace Shapeless.MVC3.Controllers
             return re;
         }
 
-        public ActionResult total() 
-        {
-            
-            return Content(_total().ToString());
-        }
+        
 
-        protected IList<IDictionary<string,object>> _rows()
+        protected override IList<IDictionary<string,object>> _rows()
         {
             string sql = createSelectWithOrderbySql(start,limit);
             IList<IDictionary<string,object>> rows = Sqlz.list(connection, sql);
             return rows;
         }
 
-        public ActionResult rows()
-        {
-            return Json(_rows(),JsonRequestBehavior.AllowGet);
-        }
+       
 
 
         
 
-        public ActionResult grid()
-        {
-            Grid grid=new Grid
-            {
-                rows = _rows()
-            };
-            int rcount = grid.rows.Count;
-            grid.total = rcount > limit ? _total() : rcount;
-            return Json(grid,JsonRequestBehavior.AllowGet);
-        }
+      
 
         
 

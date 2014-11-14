@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -45,7 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DSController.cs" />
+    <Compile Include="Controllers\SqlDSController.cs" />
     <Compile Include="Controllers\MDController.cs" />
+    <Compile Include="Models\Grid.cs" />
+    <Compile Include="Models\Remind.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
