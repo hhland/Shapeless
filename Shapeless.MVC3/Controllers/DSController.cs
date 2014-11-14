@@ -48,5 +48,17 @@ namespace Shapeless.MVC3.Controllers
             return Json(grid, JsonRequestBehavior.AllowGet);
         }
 
+        protected virtual string _help()
+        {
+            return "";
+        }
+
+    
+
+        public ActionResult help()
+        {
+            return Content(_help());
+        }
+
     }
 }

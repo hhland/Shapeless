@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace Shapeless.Core
@@ -91,31 +92,27 @@ namespace Shapeless.Core
 
         public static object parse(Type type, string value)
         {
-            object setValue = null;
-            if (type == typeof(String))
-            {
-                setValue = value;
-            }
-            else if (new Type[] { typeof(Double), typeof(double), typeof(Nullable<double>), typeof(Nullable<Double>) }.Contains(type)
-              )
-            {
-                setValue = Double.Parse(value);
-            }
-            else if (new Type[] { typeof(float), typeof(Nullable<float>) }.Contains(type))
-            {
-                setValue = float.Parse(value);
-            }
-            else if (new Type[] { typeof(Int32), typeof(int), typeof(Nullable<int>) }.Contains(type)
-                  )
-            {
-                setValue = Int32.Parse(value);
-            }
-            else if (new Type[] { typeof(Nullable<DateTime>), typeof(DateTime) }.Contains(type))
-            {
-                setValue = DateTime.Parse(value);
-                //setValue = DateTimeUtil.ParseDateTime(value);
-            }
+            MethodInfo mth = type.GetMethod("Parse");
+            object setValue = mth.Invoke(type,new object[]{value});
             return setValue;
+        }
+
+        public static bool isNullOrWhiteSpace(params string[] vals)
+        {
+            foreach (var val in vals)
+            {
+                if (string.IsNullOrWhiteSpace(val)) return true;
+            }
+            return false;
+        }
+
+        public static bool isNullOrEmpty(params string[] vals)
+        {
+            foreach (var val in vals)
+            {
+                if (string.IsNullOrEmpty(val)) return true;
+            }
+            return false;
         }
     }
 }

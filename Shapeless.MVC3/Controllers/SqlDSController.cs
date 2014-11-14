@@ -150,13 +150,22 @@ namespace Shapeless.MVC3.Controllers
         {
             get
             {
-                string sort = Request.Params["sort"];
-                string dir = Request.Params["dir"];
-                if (string.IsNullOrWhiteSpace(sort) || string.IsNullOrWhiteSpace(dir))
+                string orderby = string.Empty;
+                foreach (string name in Request.Params.Keys)
                 {
-                    return "";
+                    string col = Request.Params[name];
+                    if (string.IsNullOrWhiteSpace(col)) continue;
+                    if (name.StartsWith("ob_desc"))
+                    {
+                        orderby += col + " desc,";
+                    }else if (name.StartsWith("ob_asc"))
+                    {
+                        orderby += col + " asc,";
+                    }
                 }
-                return sort + " " + dir;
+                
+                 orderby =orderby.TrimEnd(',');
+                return orderby;
             }
         }
 
@@ -187,6 +196,24 @@ namespace Shapeless.MVC3.Controllers
             return condition;
         }
 
+        protected string createOrderbySql()
+        {
+            string orderby = "";
+            if (!String.IsNullOrWhiteSpace(baseOrderby) && !String.IsNullOrWhiteSpace(postOrderby))
+            {
+                orderby = string.Format(" order by {0},{1} ", baseOrderby.Trim(','), postOrderby.Trim(','));
+            }
+            else if (!String.IsNullOrWhiteSpace(baseOrderby))
+            {
+                orderby = string.Format(" order by {0} ", baseOrderby.Trim(','));
+            }
+            else if (!String.IsNullOrWhiteSpace(postOrderby))
+            {
+                orderby = string.Format(" order by {0} ", postOrderby.Trim(','));
+            }
+            return orderby;
+        }
+
         protected  string createSelectSql()
         {
 
@@ -202,7 +229,7 @@ namespace Shapeless.MVC3.Controllers
         protected  string createSelectWithOrderbySql()
         {
 
-            return "select count(*) from " + viewName + " " + createConditionSql();
+            return "select " + columnNames +" from " + viewName + " " + createConditionSql() + createOrderbySql();
         }
 
         protected abstract string createSelectWithOrderbySql(int start, int limit);
@@ -233,7 +260,15 @@ namespace Shapeless.MVC3.Controllers
 
 
         
-
+        public ActionResult debug()
+        {
+            IDictionary<string,string> dsqls=new Dictionary<string, string>();
+            foreach (var mthsql in this.GetType().GetMethods().Where(mth=>mth.Name.EndsWith("Sql")))
+            {
+                dsqls[mthsql.Name] = mthsql.Invoke(this,new object[]{}) as string;
+            }
+            return Json(dsqls, JsonRequestBehavior.AllowGet);
+        }
       
 
         
