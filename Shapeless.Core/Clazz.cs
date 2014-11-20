@@ -57,6 +57,25 @@ namespace Shapeless.Core
             return methods;
         }
 
+        public static FieldInfo[] fields(Type type)
+        {
+            IList<FieldInfo> fields = new List<FieldInfo>();
+            Type baseType = type;
+            while (baseType != typeof(Object) && baseType != typeof(object))
+            {
+
+                FieldInfo[] tempFields = baseType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
+                foreach (FieldInfo tempField in tempFields)
+                {
+                    fields.Add(tempField);
+                }
+                baseType = baseType.BaseType;
+            }
+
+            return fields.ToArray<FieldInfo>();
+        }
+
+
         public static IDictionary<string, MethodInfo> setterMethods(Type type)
         {
             return Clazz.methods(type).Values.Where(mth => mth.Name.StartsWith("set_")).ToDictionary(mth => mth.Name);
