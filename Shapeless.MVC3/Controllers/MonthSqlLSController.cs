@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Shapeless.MVC3.Controllers
 {
-    public abstract class MonthSqlDSController :SqlDSController
+    public abstract class MonthSqlLSController :SqlLSController
     {
         protected abstract int year { get; }
         protected abstract int month { get; }

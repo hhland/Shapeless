@@ -7,7 +7,7 @@ using Shapeless.MVC3.Models;
 
 namespace Shapeless.MVC3.Controllers
 {
-    public abstract class DSController : Controller
+    public abstract class LSController : Controller
     {
 
         protected abstract string title { get; }

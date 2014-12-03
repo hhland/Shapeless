@@ -11,7 +11,7 @@ using Shapeless.MVC3.Models;
 
 namespace Shapeless.MVC3.Controllers
 {
-    public abstract class SqlDSController :DSController
+    public abstract class SqlLSController :LSController
     {
 
         protected abstract string viewName { get;}

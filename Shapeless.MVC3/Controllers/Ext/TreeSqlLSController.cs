@@ -9,7 +9,7 @@ using Shapeless.MVC3.Models;
 
 namespace Shapeless.MVC3.Controllers.Ext
 {
-   public abstract class TreeSqlDSController :SqlDSController
+   public abstract class TreeSqlLSController :SqlLSController
     {
 
        public const string ATTR_CHILDREN = "children",

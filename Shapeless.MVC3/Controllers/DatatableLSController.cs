@@ -7,7 +7,7 @@ using Shapeless.MVC3.Models;
 
 namespace Shapeless.MVC3.Controllers
 {
-    public abstract class DatatableDSController :DSController
+    public abstract class DatatableLSController :LSController
     {
 
         protected abstract DataTable createDataTable();
