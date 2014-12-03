@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 12.75" name="PetShopTable">
+  <DataContextMoniker Name="/PetShopTableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="60de7030-41af-484a-b420-af480ff0f68c" absoluteBounds="8.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/PetShopTableDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4df922a7-ed9c-4325-82c9-d075a9ab0996" absoluteBounds="8.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae8a0a02-f5ed-4413-8b61-1fcc8a0f83a9" absoluteBounds="3.5, 5.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/PetShopTableDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5437145-8906-4843-9a27-a03a7b2e112f" absoluteBounds="3.515, 5.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54cc7a0e-5e75-4309-b7fe-0b153492c759" absoluteBounds="0.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/PetShopTableDataContext/BannerData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d7eb232-4fb9-4c90-bd4b-2ebf5be9144b" absoluteBounds="0.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49ef1fdf-29a9-48e6-98e0-a21580cfa659" absoluteBounds="0.75, 1.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/PetShopTableDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05b7ac17-4708-47b0-b4b4-aa8db4734a59" absoluteBounds="0.765, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58673f23-4126-4688-8579-7a94a6ea264d" absoluteBounds="0.75, 10.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/PetShopTableDataContext/Inventory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0e7da41-3afa-4b63-a2f0-f2b5e0e19b0c" absoluteBounds="0.765, 11.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cbbf69a7-b525-4811-8d5d-ff3149b905af" absoluteBounds="6.25, 1, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/PetShopTableDataContext/Item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecbad74a-778b-49a0-9eb9-59b07d377a7e" absoluteBounds="6.265, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0acc15b-5b98-483a-9983-896ce159b2ee" absoluteBounds="9.5, 8.25, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PetShopTableDataContext/LineItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3dba429a-a054-4f18-9ce1-c0175c409371" absoluteBounds="9.515, 8.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7316160a-1603-4cdf-a05b-f645df08ed5f" absoluteBounds="6.75, 5.125, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/PetShopTableDataContext/Orders" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29c2b204-b8f0-4cda-a4ae-9afb150c3dc1" absoluteBounds="6.765, 5.585, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e1c89ad-d4e9-4147-91e3-bb0cf7c5da5f" absoluteBounds="9.5, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PetShopTableDataContext/OrderStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bf5e02c-bb94-4659-8487-d133fd4cef6e" absoluteBounds="9.515, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc2a0bb3-a505-4666-b4c5-613ef6280a2e" absoluteBounds="3.5, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PetShopTableDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce0d8188-b15a-4640-9785-b7c6253a2896" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="403b8b14-215f-4515-ba8c-16cf1e6effb7" absoluteBounds="9.75, 10.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PetShopTableDataContext/Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c35737e9-1c26-4660-aba0-3cde8d302622" absoluteBounds="9.765, 11.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edbec525-a43a-4b15-8c9b-735b39b5e2fa" absoluteBounds="11.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/PetShopTableDataContext/SignOn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dcf0bd55-4495-43a8-afc7-a9351bad2021" absoluteBounds="11.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.125); (5.875 : 4.75); (5.875 : 2.46235270182292); (6.25 : 2.46235270182292)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PetShopTableDataContext/Supplier/Supplier_Item" />
+      <nodes>
+        <classShapeMoniker Id="ae8a0a02-f5ed-4413-8b61-1fcc8a0f83a9" />
+        <classShapeMoniker Id="cbbf69a7-b525-4811-8d5d-ff3149b905af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 9.13544840494792); (9.5 : 9.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PetShopTableDataContext/Orders/Orders_LineItem" />
+      <nodes>
+        <classShapeMoniker Id="7316160a-1603-4cdf-a05b-f645df08ed5f" />
+        <classShapeMoniker Id="d0acc15b-5b98-483a-9983-896ce159b2ee" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 6.66429768880208); (9.5 : 6.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PetShopTableDataContext/Orders/Orders_OrderStatus" />
+      <nodes>
+        <classShapeMoniker Id="7316160a-1603-4cdf-a05b-f645df08ed5f" />
+        <classShapeMoniker Id="7e1c89ad-d4e9-4147-91e3-bb0cf7c5da5f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.98117635091146); (6.25 : 1.98117635091146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PetShopTableDataContext/Product/Product_Item" />
+      <nodes>
+        <classShapeMoniker Id="fc2a0bb3-a505-4666-b4c5-613ef6280a2e" />
+        <classShapeMoniker Id="cbbf69a7-b525-4811-8d5d-ff3149b905af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.44314697265625); (3.5 : 2.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PetShopTableDataContext/Category/Category_Product" />
+      <nodes>
+        <classShapeMoniker Id="49ef1fdf-29a9-48e6-98e0-a21580cfa659" />
+        <classShapeMoniker Id="fc2a0bb3-a505-4666-b4c5-613ef6280a2e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
